@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 nav ul {
@@ -8,7 +8,6 @@ nav ul {
     justify-content: space-between;
     list-style: none;
     padding: 20px 10px;
-    background-color: red;
 }
 
 .nav-group {
@@ -21,17 +20,17 @@ nav ul {
 }
 
 .showcase {
-    height: 500px;
+    height: 100vh;
     width: 100%;
-    background-image: url("./images/photo-1514933651103-005eec06c04b.webp");
+    background-image: url("./images/photo-1506354666786-959d6d497f1a.webp");
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .logo-showcase {
@@ -40,17 +39,177 @@ nav ul {
     font-size: 80px;
     padding: 20px;
     border-radius: 6px;
+    border-top-right-radius: 50px;
 }
+
+.logo-subheading {
+    margin-top: -30px;
+    color: #FFF;
+}
+
+.review-section h2{
+    text-align: center;
+}
+/* Carasoul styling */
+ /* Slideshow container */
+ .slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+    font-size: 40px;
+}
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;} 
 
 .menu-btn {
     margin-top: 20px;
-    padding: 30px 80px;
+    padding: 20px 20px;
     border: none;
     border-radius: 4px;
     font-size: 20px;
     background-color: aqua;
 }
 
+.menu-btn:hover {
+    cursor: pointer;
+
+}
+
 .menu-btn a {
     text-decoration: none;
+}
+
+.about-section {
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.about-description {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hours-section {
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.hours-description {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.social-icons i {
+    padding: 6px;
+}
+
+/* add a carousel of reviews */
+
+
+/* Change menu for mobile */
+/* @media only screen and (max-width: 415px) {
+    nav ul {
+        display: none;
+    }
+} */
+
+@media only screen and (max-width: 765px) {
+    .links-container {
+        flex-direction: column;
+    }
+
+    .social-icons {
+        margin: 20px auto;
+    }
 }

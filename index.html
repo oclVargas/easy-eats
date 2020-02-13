@@ -5,7 +5,9 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/b72b7aeccd.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -23,9 +25,68 @@
         <main>
             <div class="showcase">
                 <span class="logo-showcase">EASY EATS</span>
+                <p class="logo-subheading">the best pizza in kansas</p>
                 <button class="menu-btn">LOOK AT OUR MENU</button>
             </div>
         </main>
+        <section class="about-section">
+            <div class="about-description">
+                <h2>ABOUT US</h2>
+                <p>Conveniently located in downtown Liberal, Kansas, serving up classic American fare and an array of craft beers and specialty cocktails.</p>
+            </div>
+        </section>
+         <!-- Slideshow container -->
+        <section class="review-section">
+         <h2>WHAT OUR CUSTOMERS ARE SAYING ABOUT US</h2>
+        <div class="slideshow-container">
+
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+            <q>Best food in the state!</q>
+            <p class="author">- Katie H</p>
+            </div>
+        
+            <div class="mySlides">
+            <q>Great food and awesome customer service!</q>
+            <p class="author">- Dave F</p>
+            </div>
+        
+            <div class="mySlides">
+            <q>They're okay.</q>
+            <p class="author">- Thomas J</p>
+            </div>
+        
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        </section>
+        <section class="hours-section">
+            <div class="hours-description">
+                <h2>HOURS</h2>
+                <span>HOURS:</span>
+                <p>MONDAY - FRIDAY: 11:00am - 10:00pm</p>
+                <p>SATURDAY - SUNDAY: 10:00am - 11:30pm</p>
+            </div>
+        </section>
+        <footer>
+            <hr>
+            <div class="links-container">
+                <p>TM & Copyright 2020 Easy Eats Corporation.‌‌ All Rights Reserved.</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-square fa-lg"></i>
+                    <i class="fab fa-twitter-square fa-lg"></i>
+                    <i class="fab fa-instagram-square fa-lg"></i>
+                </div>
+            </div>
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>
