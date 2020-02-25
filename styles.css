@@ -3,6 +3,14 @@
     font-family: 'Oswald', sans-serif;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    color: #ff6347;
+    width: 100%;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -17,12 +25,13 @@ nav ul {
 .nav-group li a {
     margin: 0 20px;
     text-decoration: none;
+    color: #ff6347;
 }
 
 .showcase {
     height: 100vh;
     width: 100%;
-    background-image: url("./images/photo-1506354666786-959d6d497f1a.webp");
+    background-image: url("./images//photo-1513104890138-7c749659a591.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -31,10 +40,11 @@ nav ul {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 64px;
 }
 
 .logo-showcase {
-    color: white;
+    color: #fff;
     background-color: black;
     font-size: 80px;
     padding: 20px;
@@ -44,7 +54,14 @@ nav ul {
 
 .logo-subheading {
     margin-top: -30px;
+    font-size: 14px;
+    font-style: italic;
     color: #FFF;
+}
+
+.review-section {
+    width: 50%;
+    margin: 0 auto;
 }
 
 .review-section h2{
@@ -54,7 +71,7 @@ nav ul {
  /* Slideshow container */
  .slideshow-container {
     position: relative;
-    background: #f1f1f1f1;
+    background: #fff;
   }
   
   /* Slides */
@@ -96,7 +113,7 @@ nav ul {
   .dot-container {
     text-align: center;
     padding: 20px;
-    background: #ddd;
+    background: #000;
   }
   
   /* The dots/bullets/indicators */
@@ -130,21 +147,29 @@ q {
     border: none;
     border-radius: 4px;
     font-size: 20px;
-    background-color: aqua;
+    font-weight: bold;
+    background-color: #fff;
+    color: #ff6347;
 }
 
 .menu-btn:hover {
     cursor: pointer;
-
+    color: #fff;
+    background-color: #ff6347;
 }
 
 .menu-btn a {
     text-decoration: none;
 }
 
+h2 {
+    color: #ff6347;
+    font-size: 40px;
+}
+
 .about-section {
-    padding: 30px;
     margin-bottom: 50px;
+    display: flex;
 }
 
 .about-description {
@@ -152,6 +177,12 @@ q {
     text-align: center;
     flex-direction: column;
     justify-content: center;
+    color: #444444;
+    flex: 1;
+}
+
+.about-section img {
+    flex: 1;
 }
 
 .hours-section {
@@ -187,7 +218,12 @@ footer {
 
 footer p {
     font-size: 12px;
+    margin-top: -10px;
     text-align: center;
+}
+
+.social-icons {
+    margin-top: -12px;
 }
 
 .social-icons i {
