@@ -11,9 +11,17 @@ nav {
     width: 100%;
 }
 
+.logo {
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 3px;
+    border-top-right-radius: 18px;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
     padding: 20px 10px;
 }
@@ -28,8 +36,16 @@ nav ul {
     color: #ff6347;
 }
 
+#hamburger {
+    display: none;
+}
+
+#hamburger:hover {
+    cursor: pointer;
+}
+
 .showcase {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-image: url("./images//photo-1513104890138-7c749659a591.webp");
     background-repeat: no-repeat;
@@ -59,88 +75,6 @@ nav ul {
     color: #FFF;
 }
 
-.review-section {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.review-section h2{
-    text-align: center;
-}
-/* Carasoul styling */
- /* Slideshow container */
- .slideshow-container {
-    position: relative;
-    background: #fff;
-  }
-  
-  /* Slides */
-  .mySlides {
-    display: none;
-    padding: 80px;
-    text-align: center;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-    color: white;
-  }
-  
-  /* The dot/bullet/indicator container */
-  .dot-container {
-    text-align: center;
-    padding: 20px;
-    background: #000;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  /* Add a background color to the active dot/circle */
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Add an italic font style to all quotes */
-q {
-    font-style: italic;
-    font-size: 40px;
-}
-  /* Add a blue color to the author */
-  .author {color: cornflowerblue;} 
-
 .menu-btn {
     margin-top: 20px;
     padding: 20px 20px;
@@ -165,11 +99,13 @@ q {
 h2 {
     color: #ff6347;
     font-size: 40px;
+    font-weight: 900;
 }
 
 .about-section {
-    margin-bottom: 50px;
     display: flex;
+    height: auto;
+    width: 100%; 
 }
 
 .about-description {
@@ -177,24 +113,58 @@ h2 {
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    color: #444444;
+    justify-items: center;
+    color: #222;
     flex: 1;
+    border: 2px solid #ff6347;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 20px;
+}
+
+.about-description p {
+    margin: 0 auto;
+    width: 50%;
 }
 
 .about-section img {
-    flex: 1;
+    width: 100%;
+    height: 100%;
 }
 
-.hours-section {
-    padding: 30px;
+.about-photo {
+    flex: 1;
+    border: 2px solid #ff6347;
+}
+
+/* Private Events */
+.private-events-img {
+    background: url(./images/photo-1544880047-1966fc792a37.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-bottom: 50px;
 }
 
-.hours-description {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
+.private-events-img h2 {
+    color: #fff;
+}
+
+.book-event {
+    padding: 14px;
+    background-color: #fff;
+    color: #ff6347;
+}
+
+.book-event:hover {
+    color: #fff;
+    background-color: #ff6347;
+    cursor: pointer;
 }
 
 hr {
@@ -230,15 +200,20 @@ footer p {
     padding: 6px;
 }
 
-/* add a carousel of reviews */
-
+.social-icons i:hover {
+    cursor: pointer;
+}
 
 /* Change menu for mobile */
-/* @media only screen and (max-width: 415px) {
-    nav ul {
+@media only screen and (max-width: 415px) {
+    .nav-group a {
         display: none;
     }
-} */
+
+    #hamburger {
+        display: block;
+    }
+}
 
 @media only screen and (max-width: 765px) {
     .links-container {
@@ -247,5 +222,9 @@ footer p {
 
     .social-icons {
         margin: 20px auto;
+    }
+
+    .about-section {
+        flex-direction: column;
     }
 }
